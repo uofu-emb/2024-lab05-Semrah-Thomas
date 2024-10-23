@@ -13,6 +13,7 @@ int main(void)
     gpio_put(OUT_PIN, toggle);
 
     while (true) {
+        sleep_ms(100); // Work
         toggle = !toggle;
         gpio_put(OUT_PIN, toggle);
         sleep_ms(DELAY_MS);

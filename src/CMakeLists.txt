@@ -1,6 +1,6 @@
 # This is the main binary. List your C files here.
 add_executable(lab05
-    sleep.c
+    gpio_interrupt.c
     )
 
 pico_set_program_name(lab05 "lab05")
