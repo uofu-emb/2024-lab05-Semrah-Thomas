@@ -11,3 +11,5 @@ Here is the table showing our measured values.
 | Timer Delay | 1 Hz              |      1Hz       | 1 S    |50%         | 0      |N/A             |
 | Task        | 1 Hz              |      1Hz       | 1 S    |50%         | 0      |N/A             |
 | Timer Delay | 1 Hz              |      0.833Hz   | 1.2 S  |50%         | 200ms  |12 Minutes      |
+
+![GPIO](!Data/Images/GPIO_D.png)
