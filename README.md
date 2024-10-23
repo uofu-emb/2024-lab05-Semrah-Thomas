@@ -1,5 +1,7 @@
 # Lab 05 for Semrah and Thomas
 
+![example workflow](https://github.com/uofu-emb/2024-lab05-Semrah-Thomas/actions/workflows/main.yml/badge.svg)
+
 ## Table
 Here is the table showing our measured values.
 
