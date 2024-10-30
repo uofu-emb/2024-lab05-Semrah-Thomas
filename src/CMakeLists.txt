@@ -1,19 +1,18 @@
 # This is the main binary. List your C files here.
-add_executable(threads
-    threads.c
-    threads_functions.c
+add_executable(lab05
+    gpio_interrupt.c
     )
 
-pico_set_program_name(threads "threads")
-pico_set_program_version(threads "0.1")
+pico_set_program_name(lab05 "lab05")
+pico_set_program_version(lab05 "0.1")
 
 # Modify the below lines to enable/disable output over UART/USB.
 # These are mutually exclusive, only set one.
-pico_enable_stdio_uart(threads 0)
-pico_enable_stdio_usb(threads 1)
+pico_enable_stdio_uart(lab05 0)
+pico_enable_stdio_usb(lab05 1)
 
 # Add the libraries to the build
-target_link_libraries(threads PRIVATE
+target_link_libraries(lab05 PRIVATE
   pico_stdlib
   pico_multicore
   pico_async_context_freertos
@@ -24,10 +23,10 @@ target_link_libraries(threads PRIVATE
 # variable will be set and the wireless libraries added.
 if(PICO_CYW43_SUPPORTED)
     # For led support on pico_w
-    target_link_libraries(threads PRIVATE
+    target_link_libraries(lab05 PRIVATE
         pico_cyw43_arch_none
     )
 endif()
 
 # Another pico macro which generates the uf2 file in addition to the elf
-pico_add_extra_outputs(threads)
+pico_add_extra_outputs(lab05)
